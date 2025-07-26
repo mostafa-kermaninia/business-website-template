@@ -28,9 +28,14 @@ const Hero = () => {
                         <span className="text-gradient">Generation</span>{" "}
                     </h1>
                     <div className="ss:flex hidden md:mr-4 mr-0">
-<a href="https://t.me/MOMIS_studio" target="_blank" rel="noopener noreferrer">
-        <GetStarted />
-    </a>                    </div>
+                        <a
+                            href="https://t.me/MOMIS_studio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <GetStarted />
+                        </a>{" "}
+                    </div>
                 </div>
                 <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
                     of Web3 Games.

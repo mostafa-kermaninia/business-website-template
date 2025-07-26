@@ -43,8 +43,11 @@ const Business = () => {
                     ecosystem, helping you engage your audience in new and
                     exciting ways.
                 </p>
-                <Button text="Get Started" styles="mt-10" />{" "}
-            </div>
+            <div className={`${styles.flexCenter} sm:ml-10 ml-0`}>
+                <a href="mailto:momis.studio.org@gmail.com">
+                    <Button text="Get Started" styles="mt-10" />
+                </a>
+            </div>            </div>
             <div className={`${layout.sectionImg} flex-col`}>
                 {features.map((feature, index) => (
                     <FeatureCard key={feature.id} {...feature} index={index} />

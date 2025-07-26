@@ -34,10 +34,9 @@ const AboutUs = () => {
                     connect users in the decentralized world.
                 </p>
 
-                {/* می‌توانید یک دکمه تماس با ما هم اینجا قرار دهید */}
-                <a href="mailto:momis.studio.org@gmail.com" className="mt-10">
+                {/* <a href="mailto:momis.studio.org@gmail.com" className="mt-10">
                     <Button text="Connect Us" styles="mt-10" />{" "}
-                </a>
+                </a> */}
             </div>
         </section>
     );
