@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-import { Button, Button2, Button3 } from './Button';
+import  Button from './Button';
 const CTA = () => {
     return (
         <section
@@ -15,7 +15,7 @@ const CTA = () => {
             </div>
                       <div className={`${styles.flexCenter} sm:ml-10 ml-0`}>
                 <a href="mailto:momis.studio.org@gmail.com">
-                    <Button3 />
+                    <Button text="Connect Us" styles="mt-10" />
                 </a>
             </div>
         </section>

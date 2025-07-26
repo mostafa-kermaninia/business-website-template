@@ -1,7 +1,7 @@
 import React from "react";
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import { Button, Button2 } from './Button';
+import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
     <div
@@ -43,7 +43,7 @@ const Business = () => {
                     ecosystem, helping you engage your audience in new and
                     exciting ways.
                 </p>
-                <Button2 styles="mt-10" />
+                <Button text="Get Started" styles="mt-10" />{" "}
             </div>
             <div className={`${layout.sectionImg} flex-col`}>
                 {features.map((feature, index) => (
