@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { robot } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
@@ -8,20 +8,10 @@ const Hero = () => {
             id="home"
             className={`flex md:flex-row flex-col ${styles.paddingY}`}
         >
+            {/* بخش چپ: متن‌ها (ورود از چپ) */}
             <div
-                className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+                className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-slide-in-left`}
             >
-                {/* <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-                    <img
-                        src={discount}
-                        alt="discount"
-                        className="w-[32px] h-[32px]"
-                    />
-                    <p className={`${styles.paragraph} ml-2`}>
-                        <span className="text-white">20%</span> Discount For{" "}
-                        <span className="text-white">1 Month</span> Account
-                    </p>
-                </div> */}
                 <div className="flex flex-row justify-between items-center w-full">
                     <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
                         The Next <br className="sm:block hidden" />{" "}
@@ -34,7 +24,7 @@ const Hero = () => {
                             rel="noopener noreferrer"
                         >
                             <GetStarted />
-                        </a>{" "}
+                        </a>
                     </div>
                 </div>
                 <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
@@ -46,8 +36,10 @@ const Hero = () => {
                     solutions that redefine digital interaction.
                 </p>
             </div>
+
+            {/* بخش راست: تصویر (ورود از راست) */}
             <div
-                className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+                className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-slide-in-right`}
             >
                 <img
                     src={robot}
@@ -58,8 +50,12 @@ const Hero = () => {
                 <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
                 <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
             </div>
+
+            {/* دکمه Get Started برای موبایل */}
             <div className={`ss:hidden ${styles.flexCenter}`}>
-                <GetStarted />
+                <a href="https://t.me/MOMIS_studio" target="_blank" rel="noopener noreferrer">
+                    <GetStarted />
+                </a>
             </div>
         </section>
     );

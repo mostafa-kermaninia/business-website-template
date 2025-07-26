@@ -15,7 +15,10 @@ const CTA = () => {
             </div>
             <div className={`${styles.flexCenter} sm:ml-10 ml-0`}>
                 <a href="mailto:momis.studio.org@gmail.com">
-                    <Button text="Connect Us" styles="mt-10" />
+                    <Button
+                        text="Connect Us"
+                        styles="mt-10 animate-pulse-button"
+                    />
                 </a>
             </div>
         </section>

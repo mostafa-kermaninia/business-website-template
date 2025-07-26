@@ -15,6 +15,7 @@ import close from "./close.svg";
 import google from "./google.svg";
 import apple from "./apple.svg";
 import arrowUp from "./arrow-up.svg";
+import arrowUp2 from "./arrow-up2.svg";
 import discount from "./Discount.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -45,6 +46,7 @@ export {
   google,
   apple,
   arrowUp,
+  arrowUp2,
   discount,
   facebook,
   instagram,

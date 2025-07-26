@@ -78,12 +78,11 @@ export const feedback = [
 ];
 
 export const stats = [
-    { id: "stats-1", title: "Projects", value: "2+" },
-    { id: "stats-2", title: "Active Players", value: "20+" },
-    { id: "stats-3", title: "Strategic Partners", value: "1+" },
+    { id: "stats-1", title: "Projects", value: "3+" },
+    { id: "stats-2", title: "Active Players", value: "50+" },
+    { id: "stats-3", title: "Strategic Partners", value: "2+" },
 ];
 
-// کد جدید برای footerLinks
 export const footerLinks = [
     {
         title: "Our Company",

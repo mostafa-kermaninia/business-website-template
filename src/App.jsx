@@ -9,6 +9,7 @@ import {
     Navbar,
     Stats,
     AboutUs,
+    ScrollToTop,
 } from "./components";
 import styles from "./style";
 
@@ -37,6 +38,7 @@ const App = () => {
                     <AboutUs /> {/* AboutUs را به جای مناسب‌تری منتقل کردیم */}
                     <CTA />
                     <Footer />
+                    <ScrollToTop /> {/* ۲. کامپوننت را اینجا اضافه کنید */}
                 </div>
             </div>
         </div>

@@ -6,7 +6,10 @@ import Button from "./Button"; // دکمه Get Started را وارد می‌کن
 const AboutUs = () => {
     return (
         // از ساختار دو ستونی استاندارد تمپلیت استفاده می‌کنیم
-        <section id="about" className={layout.sectionReverse}>
+        <section
+            id="about"
+            className={`${layout.sectionReverse} animate-fade-in`}
+        >
             {/* ستون راست: تصویر */}
             <div className={layout.sectionImgReverse}>
                 <img

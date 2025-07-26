@@ -9,6 +9,7 @@ import Navbar from "./Navbar";
 import Stats from "./Stats";
 import Testimonials from "./Testimonials";
 import AboutUs from "./AboutUs";
+import ScrollToTop from "./ScrollToTop";
 
 export {
     Billing,
@@ -22,4 +23,5 @@ export {
     Stats,
     Testimonials,
     AboutUs, // این را اضافه کنید
+    ScrollToTop
 };
