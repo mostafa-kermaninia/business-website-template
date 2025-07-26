@@ -24,7 +24,7 @@ const Clients = () => {
             {/* ستون راست: لوگو */}
             <div className={`${layout.sectionImg} flex-col`}>
                 <a
-                    href="https://cutt.ly/regUTOEj"
+                    href="https://t.me/ontonlive"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
