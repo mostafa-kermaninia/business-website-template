@@ -1,23 +1,39 @@
-import React from 'react'
-import { clients } from '../constants'
-import styles from '../style'
+import React from 'react';
+import { clients } from '../constants';
+import styles, { layout } from '../style'; // layout را هم import می‌کنیم
 
 const Clients = () => {
-  return (
-    <section className={`${styles.flexCenter} my-4`}>
-      <div className={`${styles.flexCenter} flex-wrap w-full`}>
-        {clients.map((client) => (
-          <div key={client.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px]`}>
-            <img
-              src={client.logo}
-              alt='client'
-              className='sm:w-[192px] w-[100px] object-contain'
-            />           
-          </div>
-        ))}
-      </div>
-    </section>
-  )
-}
+  // چون فقط یک همکار داریم، لوگوی آن را مستقیم انتخاب می‌کنیم
+  const ontonPartner = clients[0]; 
 
-export default Clients
+  return (
+    // از ساختار دو ستونی استاندارد تمپلیت استفاده می‌کنیم
+    <section id="partners" className={layout.section}>
+      
+      {/* ستون چپ: متن توضیحات */}
+      <div className={layout.sectionInfo}>
+        <h2 className={styles.heading2}>
+          Our Strategic Partnership
+        </h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          We are proud to collaborate with ONTON, a revolutionary Web3 event management platform. Integrated with Telegram and powered by blockchain, ONTON redefines how events are experienced and managed through innovative features like NFT ticketing.
+        </p>
+      </div>
+
+      {/* ستون راست: لوگو */}
+      <div className={`${layout.sectionImg} flex-col`}>
+        <a href="https://cutt.ly/regUTOEj" target="_blank" rel="noopener noreferrer">
+          <img
+            src={ontonPartner.logo}
+            alt="onton-partner-logo"
+            // سایز لوگو را در اینجا کوچک‌تر کرده‌ایم
+            className="sm:w-[160px] w-[100px] object-contain hover:opacity-80 transition-opacity"
+          />
+        </a>
+      </div>
+
+    </section>
+  );
+};
+
+export default Clients;

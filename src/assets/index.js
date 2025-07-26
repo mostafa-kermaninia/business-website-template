@@ -25,6 +25,7 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import onton_logo from "./onton_logo.png";
 import math from "./Math.png";
+import about_icon from './about.svg';
 
 export {
   airbnb,
@@ -53,5 +54,6 @@ export {
   people02,
   people03,
   onton_logo,
-  math
+  math,
+  about_icon
 };

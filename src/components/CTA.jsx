@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-import { Button, Button2 } from './Button';
+import { Button, Button2, Button3 } from './Button';
 const CTA = () => {
     return (
         <section
@@ -13,8 +13,10 @@ const CTA = () => {
                     we can bring your idea to life on the Web3 platform.
                 </p>
             </div>
-            <div className={`${styles.flexCenter} sm:ml-10 ml-0`}>
-                <Button2 />
+                      <div className={`${styles.flexCenter} sm:ml-10 ml-0`}>
+                <a href="mailto:momis.studio.org@gmail.com">
+                    <Button3 />
+                </a>
             </div>
         </section>
     );
