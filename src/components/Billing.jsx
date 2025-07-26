@@ -1,41 +1,64 @@
-import React from 'react'
-import { apple, bill, google } from '../assets'
-import styles, { layout } from '../style'
+import React from "react";
+// Button را هم اضافه می‌کنیم چون بخش دوم به آن نیاز دارد
+import { Button } from "./Button"; 
+import { math } from "../assets"; // عکس بازی ریاضی
+import { card } from "../assets"; // عکس بازی حافظه که قبلا در CardDeal بود
+import styles, { layout } from "../style";
 
 const Billing = () => {
-  return (
-    <section id='product' className={layout.sectionReverse}>
-      <div className={layout.sectionImgReverse}>
-        <img
-          src={bill}
-          alt='billing'
-          className='w-[100%] h-[100%] relative z-[5]'
-        />
-        <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient'/>
-        <div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient'/>
-      </div>
-      <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Easily control your <br className='sm:block hidden'/> billing & invoicing.</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Elit enim sed massa etiam.
-          Mauris eu adipiscing ultrices ametodio aenean neque.
-          Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
-        </p>
-        <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
-          <img
-            src={apple}
-            alt='app-store'
-            className='w-[128px] h-[42px] object-contain mr-5 cursor-pointer'
-          />
-          <img
-            src={google}
-            alt='google-play'
-            className='w-[128px] h-[42px] object-contain cursor-pointer'
-          />
-        </div>
-      </div>  
-    </section>
-  )
-}
+    return (
+        // یک سکشن اصلی برای هر دو بازی با شناسه (id) مناسب
+        <section id="games" className={`${layout.section} flex-col md:flex-row`}>
+            
+            {/* ------------ بخش اول: بازی ریاضی (چپ) ------------ */}
+            <div className={`${layout.sectionInfo} flex-1 mr-0 md:mr-10 mb-10 md:mb-0`}>
+                <h2 className={styles.heading2}>
+                    Speed Math Challenge <br className="sm:block hidden" /> on
+                    Telegram
+                </h2>
+                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                    Test your speed and accuracy by solving math problems in our
+                    exciting Telegram mini-game. Compete with others, earn
+                    points, and win prizes in special events.
+                </p>
+                <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+                    <a
+                        href="https://t.me/Momis_game_bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {/* می‌توانید به جای عکس، از کامپوننت Button استفاده کنید
+                          که ظاهر یکدست‌تری به سایت می‌دهد. 
+                        */}
+                        <Button text="Play Math Game" />
+                    </a>
+                </div>
+                {/* <img src={math} alt="Math Game" className="w-full h-auto mt-6 rounded-[20px]" /> */}
+            </div>
 
-export default Billing
+            {/* ------------ بخش دوم: بازی حافظه (راست) ------------ */}
+            <div className={`${layout.sectionInfo} flex-1 ml-0 md:ml-10`}>
+                <h2 className={styles.heading2}>
+                    Test Your Memory <br className="sm:block hidden" /> With
+                    Color Sequence
+                </h2>
+                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                    Memorize the sequence of colors and repeat it perfectly to
+                    score high in this addictive Telegram mini-game. How long
+                    can your memory last?
+                </p>
+                <a
+                    href="https://t.me/color_memory_bot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button text="Play Color Memory" styles="mt-10" />
+                </a>
+                 {/* <img src={card} alt="Color Memory Game" className="w-full h-auto mt-6 rounded-[20px]" /> */}
+            </div>
+            
+        </section>
+    );
+};
+
+export default Billing;
